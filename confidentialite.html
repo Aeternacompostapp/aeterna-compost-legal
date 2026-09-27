@@ -36,7 +36,7 @@
 <blockquote>
 <p><strong>⚠️ Avertissement</strong> : ce document est un projet de base rédigé pour
 correspondre exactement à ce que l'application fait techniquement
-(voir le schéma de données dans <code>migrations/</code>). Ce n'est <strong>pas</strong> un
+(voir le modèle de données dans le README du dépôt backend). Ce n'est <strong>pas</strong> un
 avis juridique et il doit être <strong>relu et validé par un juriste</strong>
 avant toute publication — en particulier pour confirmer le fondement
 légal exact de chaque traitement, les mentions spécifiques à ta
@@ -110,16 +110,34 @@ relative à vos données personnelles, contactez-nous à
 <td>Consentement (vous pouvez le désactiver dans les réglages)</td>
 </tr>
 <tr>
+<td>Votre commune (code postal, nom, département) et ses coordonnées géographiques</td>
+<td>Vous signaler les événements organisés près de chez vous</td>
+<td>Consentement (champ facultatif, effaçable à tout moment dans les réglages)</td>
+</tr>
+<tr>
 <td>Événements d'usage (écrans consultés, scans effectués)</td>
 <td>Comprendre l'usage de l'app, corriger les bugs</td>
 <td>Intérêt légitime</td>
 </tr>
 </tbody>
 </table>
+<p><strong>À propos de votre commune.</strong> Ce champ est entièrement facultatif :
+l'application fonctionne sans.</p>
+<p><strong>Nous n'enregistrons ni votre rue, ni votre numéro.</strong> Vous
+choisissez une commune dans une liste, et nous conservons son code postal, son nom,
+son numéro de département, et les coordonnées du <strong>centre de la
+commune</strong> — jamais celles de votre domicile. C'est amplement suffisant pour
+l'usage prévu : signaler les événements dans un rayon de 30 km.</p>
+<p>Ces informations ne sont <strong>jamais affichées aux autres membres</strong>, ni
+communiquées aux organisateurs d'événements : eux ne voient que le nombre de
+personnes intéressées. Le département sert également à établir des statistiques
+agrégées sur la répartition de nos utilisateurs, sans que vous soyez identifiable.
+Retirer votre commune dans les réglages efface immédiatement toutes ces
+informations.</p>
 <p><strong>Nous ne collectons jamais</strong> : numéro de sécurité sociale ou
-équivalent, données de santé humaine, données biométriques, position
-GPS précise en continu (seule une distance approximative aux
-événements communautaires peut être affichée si vous l'autorisez).</p>
+équivalent, données de santé humaine, données biométriques, votre adresse précise,
+ni votre position GPS. L'application ne demande aucune permission de localisation à
+votre téléphone.</p>
 <h2>3. Vos photos et l'intelligence artificielle</h2>
 <p>Les photos que vous prenez pour identifier un déchet ou diagnostiquer
 votre bac sont envoyées à un prestataire tiers (Anthropic, via son
@@ -146,6 +164,17 @@ Aeterna Compost pour :
   votre numéro de carte bancaire.</li>
 </ul>
 <p>Nous ne vendons jamais vos données à des tiers à des fins publicitaires.</p>
+<h3>Où sont hébergées vos données</h3>
+<p>Notre base de données et nos fichiers sont hébergés par Google Cloud
+<strong>aux États-Unis</strong>, et l'analyse IA de vos photos est réalisée par
+Anthropic, également aux États-Unis. Vos données personnelles font donc l'objet
+d'un transfert hors de l'Union européenne.</p>
+<p>Ce transfert s'appuie sur le <strong>cadre de protection des données
+UE-États-Unis</strong> (EU-US Data Privacy Framework), auquel Google et Anthropic
+adhèrent, complété par les clauses contractuelles types de la Commission
+européenne prévues dans leurs conditions de service.</p>
+<p>Vous conservez, quel que soit le lieu d'hébergement, l'intégralité des droits
+décrits en section 7.</p>
 <h2>5. Publicité</h2>
 <p>Les comptes gratuits voient des publicités. Nous utilisons Google
 AdMob. Conformément à la réglementation européenne, un bandeau de

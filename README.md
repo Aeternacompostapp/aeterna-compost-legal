@@ -36,10 +36,17 @@ national des entreprises du 28/10/2026 :
 
 ## Ce qui reste à faire
 
-1. **L'adresse électronique de contact.** Elle apparaît cinq fois,
-   sous la forme `[[À COMPLÉTER : adresse de contact]]`. Prévoir une
-   adresse dédiée (`contact@aeternacompost.fr`) plutôt qu'une adresse
-   personnelle : elle sera publiée, donc aspirée.
+1. ~~L'adresse électronique de contact.~~ **Fait le 28/10/2026** :
+   , redirection OVH vers la boîte du
+   dirigeant. L'offre de messagerie du domaine est « redirect » : elle
+   reçoit et fait suivre, elle ne permet PAS d'envoyer. Les réponses
+   partent donc d'une autre adresse tant qu'une offre avec boîte n'est
+   pas souscrite.
+
+   Les documents de référence du dépôt backend () citent
+   encore ,  et , qui n'existent pas.
+   À créer en redirections, ou à remplacer par  avant
+   publication de ces documents-là.
 
 2. ~~Le médiateur de la consommation.~~ **Fait le 28/10/2026** :
    adhésion au CM2C (49 rue de Ponthieu, 75008 Paris, www.cm2c.net),

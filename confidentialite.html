@@ -108,8 +108,13 @@ contact@aeternacompost.fr.</p>
 </tr>
 <tr>
 <td>Événements d'usage (écrans consultés, scans effectués)</td>
-<td>Comprendre l'usage de l'app, corriger les bugs</td>
-<td>Intérêt légitime</td>
+<td>Comprendre comment l'application est utilisée</td>
+<td>Consentement — la mesure d'audience est <strong>éteinte par défaut</strong> et ne s'allume que si vous l'activez dans Réglages</td>
+</tr>
+<tr>
+<td>Rapports de plantage (modèle d'appareil, version du système, pile d'appel)</td>
+<td>Détecter et corriger les pannes de l'application</td>
+<td>Intérêt légitime (ces rapports ne contiennent ni vos contenus ni vos photos)</td>
 </tr>
 </tbody>
 </table>
@@ -141,19 +146,24 @@ API Claude) pour être analysées. Ce prestataire traite la photo pour
 générer la réponse mais ne l'utilise pas pour entraîner ses propres
 modèles généraux dans le cadre de cette intégration.</p>
 <p>Les photos et leurs résultats d'analyse peuvent être conservés par
-Aeterna Compost pour :
-- vous permettre de revoir votre historique ;
-- constituer, <strong>après validation manuelle par un membre de notre
+Aeterna Compost pour :</p>
+<ul>
+<li>vous permettre de revoir votre historique ;</li>
+<li>constituer, <strong>après validation manuelle par un membre de notre
   équipe</strong> (jamais automatiquement), un jeu de données servant à
-  améliorer la précision de nos propres modèles/prompts. Aucune photo
-  n'entre dans ce jeu de données sans cette validation explicite.</p>
+  améliorer la précision de nos propres modèles et consignes. Aucune photo
+  n'entre dans ce jeu de données sans cette validation explicite.</li>
+</ul>
 <p>Vous pouvez demander la suppression de vos photos à tout moment
 (section 7).</p>
 <h2>4. Avec qui nous partageons vos données</h2>
 <ul>
-<li><strong>Firebase / Google Cloud</strong> (hébergement de la base de données
-  Firestore, des fichiers, des fonctions serveur, des notifications
-  push et de la mesure d'audience) ;</li>
+<li><strong>Supabase</strong> (hébergement de la base de données, de vos photos
+  et des traitements serveur) ;</li>
+<li><strong>Google</strong>, pour trois services distincts : l'acheminement des
+  notifications push (Firebase Cloud Messaging), les rapports de plantage
+  (Crashlytics) et, <em>uniquement si vous l'avez activée</em>, la mesure
+  d'audience (Firebase Analytics) ;</li>
 <li><strong>Anthropic</strong> (analyse IA des photos, voir section 3) ;</li>
 <li><strong>RevenueCat et les plateformes de paiement</strong> (Apple, Google) pour
   la gestion de votre abonnement premium — nous ne recevons jamais
@@ -165,15 +175,20 @@ Aeterna Compost pour :
 photos sont hébergés par <strong>Supabase</strong> sur l'infrastructure
 Amazon Web Services, dans la région <strong>Paris (eu-west-3), en
 France</strong>. Ces données ne quittent pas l'Union européenne.</p>
-<p>L'application web elle-même est distribuée par <strong>Firebase Hosting</strong>
-(Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande).</p>
-<p>Deux traitements font exception et sortent de l'Union européenne :</p>
+<p>L'application elle-même est distribuée par les magasins d'applications,
+<strong>l'App Store d'Apple</strong> et <strong>Google Play</strong>. Ces
+magasins connaissent votre téléchargement et votre abonnement, selon leurs
+propres politiques de confidentialité ; ils n'ont accès à aucune des données
+que vous saisissez dans l'application.</p>
+<p>Trois traitements font exception et sortent de l'Union européenne :</p>
 <ul>
 <li><strong>L'analyse de vos photos</strong> est réalisée par <strong>Anthropic</strong>
   (États-Unis), et uniquement lorsque vous la demandez explicitement.</li>
 <li><strong>L'envoi des notifications</strong> passe par Firebase Cloud Messaging
   (Google), qui reçoit l'identifiant de votre appareil et le texte de la
   notification.</li>
+<li><strong>Les rapports de plantage</strong>, et la mesure d'audience si vous
+  l'avez activée, passent par Crashlytics et Firebase Analytics (Google).</li>
 </ul>
 <p>Ces deux transferts s'appuient sur le <strong>cadre de protection des données
 UE-États-Unis</strong> (EU-US Data Privacy Framework), auquel Google et Anthropic
@@ -182,12 +197,11 @@ européenne prévues dans leurs conditions de service.</p>
 <p>Vous conservez, quel que soit le lieu d'hébergement, l'intégralité des droits
 décrits en section 7.</p>
 <h2>5. Publicité</h2>
-<p>Les comptes gratuits voient des publicités. Nous utilisons Google
-AdMob. Conformément à la réglementation européenne, un bandeau de
-consentement (cadre TCF) vous est présenté avant tout chargement de
-publicité personnalisée ; vous pouvez modifier votre choix à tout
-moment dans Réglages → Confidentialité publicitaire. Les comptes
-premium ne voient aucune publicité.</p>
+<p><strong>L'application ne contient aucune publicité</strong>, ni pour les
+comptes gratuits ni pour les comptes premium. Aucune régie publicitaire n'y
+est intégrée, et aucune de vos données n'est utilisée à des fins publicitaires
+ni transmise à un annonceur. Le modèle économique repose uniquement sur
+l'abonnement premium.</p>
 <h2>6. Combien de temps nous gardons vos données</h2>
 <ul>
 <li>Compte actif : pendant toute la durée d'utilisation de l'app.</li>
@@ -197,18 +211,28 @@ premium ne voient aucune publicité.</p>
   30 jours avant purge complète.</li>
 <li>Journaux techniques (sécurité, anti-fraude) : conservés au maximum
   12 mois.</li>
+<li>Trois catégories survivent à la suppression du compte, parce que la loi
+  l'impose : les signalements de modération sous forme pseudonymisée (5 ans),
+  les données de facturation de l'abonnement (10 ans, obligations comptables)
+  et les données d'identification conservées en qualité d'hébergeur. Le détail
+  figure sur la <a href="suppression-compte.html">page de suppression de
+  compte</a>.</li>
 </ul>
 <h2>7. Vos droits</h2>
-<p>Vous pouvez à tout moment :
-- <strong>Consulter</strong> vos données (Réglages → exporter mes données) ;
-- <strong>Corriger</strong> vos informations de profil directement dans l'app ;
-- <strong>Supprimer votre compte</strong>, ce qui supprime immédiatement et
+<p>Vous pouvez à tout moment :</p>
+<ul>
+<li><strong>Consulter</strong> vos données (Réglages → Exporter mes données) ;</li>
+<li><strong>Corriger</strong> vos informations de profil directement dans l'app ;</li>
+<li><strong>Supprimer votre compte</strong>, ce qui supprime immédiatement et
   intégralement votre profil, vos bacs, vos apports, vos photos et
-  vos messages (Réglages → Supprimer mon compte) ;
-- <strong>Vous opposer</strong> à l'utilisation de vos données pour l'amélioration
-  des modèles IA (contactez-nous) ;
-- <strong>Retirer votre consentement</strong> aux notifications ou à la publicité
-  personnalisée à tout moment dans les réglages.</p>
+  vos messages (Réglages → Supprimer mon compte) ;</li>
+<li><strong>Supprimer votre commune</strong> seule, sans supprimer votre compte
+  (Réglages) ;</li>
+<li><strong>Vous opposer</strong> à l'utilisation de vos données pour l'amélioration
+  des modèles IA (contactez-nous) ;</li>
+<li><strong>Retirer votre consentement</strong> aux notifications ou à la mesure
+  d'audience à tout moment dans les réglages.</li>
+</ul>
 <p>Pour toute question ou réclamation, contactez contact@aeternacompost.fr. Si
 vous résidez dans l'Union européenne, vous pouvez également saisir
 l'autorité de protection des données de votre pays.</p>

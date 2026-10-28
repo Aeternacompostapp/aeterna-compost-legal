@@ -41,11 +41,11 @@ national des entreprises du 28/10/2026 :
    adresse dédiée (`contact@aeternacompost.fr`) plutôt qu'une adresse
    personnelle : elle sera publiée, donc aspirée.
 
-2. **Le médiateur de la consommation.** Obligatoire pour tout
-   professionnel qui vend à des particuliers (code de la
-   consommation, art. L.612-1). Il faut adhérer à un médiateur agréé,
-   puis inscrire son nom et son adresse dans les conditions,
-   section 12.
+2. ~~Le médiateur de la consommation.~~ **Fait le 28/10/2026** :
+   adhésion au CM2C (49 rue de Ponthieu, 75008 Paris, www.cm2c.net),
+   association agréée par la CECMC. Convention de 3 ans, **expirant
+   le 28/10/2029** — à renouveler avant cette date, sans quoi la
+   mention des conditions deviendrait fausse.
 
 3. **Des conditions de vente pour les lombricomposteurs.** Les
    conditions actuelles couvrent l'application et l'abonnement. La

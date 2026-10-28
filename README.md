@@ -64,10 +64,27 @@ national des entreprises du 28/10/2026 :
    Décision du propriétaire, le 28/10/2026. Ne pas la reproposer
    comme un manque des documents de l'application.
 
-4. **Confirmer la franchise de TVA.** Les conditions portent la
-   mention « TVA non applicable, article 293 B du CGI ». Elle est
-   exacte tant que les seuils de la franchise en base ne sont pas
-   dépassés ; à retirer le jour où ils le seront.
+4. **La TVA, le jour où la franchise sera dépassée.** Les mentions
+   légales ne portent aujourd'hui **aucune** mention de TVA, et c'est
+   correct : la LCEN n'impose le numéro de TVA intracommunautaire
+   qu'aux assujettis, et la mention de l'article 293 B du CGI
+   s'impose sur les **factures**, pas sur un site. Elle avait été
+   ajoutée le 28/10 puis retirée le même jour, n'étant pas obligatoire
+   ici.
+
+   Au dépassement du seuil (37 500 € de services, 41 250 € en seuil
+   majoré en 2026), il faudra **ajouter le numéro de TVA
+   intracommunautaire** dans les mentions légales, et porter la TVA
+   sur les factures.
+
+   Deux questions restent posées au service des impôts : qui collecte
+   réellement la TVA des abonnements vendus par Apple et Google, et
+   si un numéro de TVA intracommunautaire est déjà exigible — une
+   prestation de services à une entreprise d'un autre État membre
+   l'impose en principe **même en franchise**, dès la première vente.
+   Si un tel numéro est obtenu, **ne pas le publier** comme un numéro
+   d'assujetti ordinaire : il sert à l'autoliquidation entre
+   entreprises, pas à facturer de la TVA aux utilisateurs.
 
 5. **Vérifier que les pages sont réellement en ligne** aux adresses
    citées dans l'application et dans les fiches des magasins. Google

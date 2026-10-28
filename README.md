@@ -54,12 +54,15 @@ national des entreprises du 28/10/2026 :
    le 28/10/2029** — à renouveler avant cette date, sans quoi la
    mention des conditions deviendrait fausse.
 
-3. **Des conditions de vente pour les lombricomposteurs.** Les
-   conditions actuelles couvrent l'application et l'abonnement. La
-   vente d'un bien physique à distance en demande d'autres : droit de
-   rétractation de 14 jours, délais de livraison, garantie légale de
-   conformité, frais de retour. À écrire avant la première vente, pas
-   avant la publication de l'application.
+3. **La vente de lombricomposteurs est HORS DE CE PÉRIMÈTRE.**
+   L'immatriculation au RNE la mentionne en activité secondaire, et
+   elle demandera ses propres conditions de vente — rétractation,
+   livraison, garantie légale de conformité. Mais ces textes-là
+   n'ont rien à faire ici : ces pages et l'application ne traitent
+   que du service et de l'abonnement.
+
+   Décision du propriétaire, le 28/10/2026. Ne pas la reproposer
+   comme un manque des documents de l'application.
 
 4. **Confirmer la franchise de TVA.** Les conditions portent la
    mention « TVA non applicable, article 293 B du CGI ». Elle est

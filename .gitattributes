@@ -1,0 +1,45 @@
+# Les fins de ligne, décidées une fois pour toutes.
+#
+# CE QUE ÇA RÉPARE
+#
+# L'audit du 30/10/2026 a trouvé 88 des 210 fichiers Dart de l'app en
+# CRLF et le reste en LF, plus douze avec un BOM. Conséquence : un
+# `git diff` peut montrer un fichier entier modifié pour un caractère,
+# et `git blame` ne désigne plus personne. Deux sessions qui éditent le
+# même dépôt depuis deux outils différents suffisent à l'obtenir.
+#
+# `text eol=lf` normalise à l'enregistrement : le dépôt est en LF, le
+# poste de travail voit ce que son éditeur veut.
+#
+# CE FICHIER NE CORRIGE QUE L'AVENIR. Les fichiers déjà enregistrés en
+# CRLF le restent jusqu'à ce qu'ils soient réécrits. La normalisation
+# du passé (`git add --renormalize .`) est un commit à part, qui touche
+# des centaines de fichiers : à faire quand aucun travail n'est en
+# cours, jamais au milieu d'une fonctionnalité.
+
+*       text=auto eol=lf
+*.dart  text eol=lf
+*.sql   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.html  text eol=lf
+*.mjs   text eol=lf
+*.ts    text eol=lf
+
+# Scripts Windows : CRLF, c'est ce que PowerShell attend.
+*.ps1   text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binaires : qu'on n'y touche pas.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ttf   binary
+*.otf   binary
+*.keystore binary
+*.jks   binary
+*.p8    binary
